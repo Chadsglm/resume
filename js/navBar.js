@@ -14,6 +14,5 @@ $(function() {
       header.classList.remove('expand-header');
     }  
   }
-
   $(window).scroll(navControl);
 });

@@ -80,7 +80,6 @@ var projects = {
     ]
 };
 
-
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
@@ -136,7 +135,6 @@ function displayWork() {
 
 displayWork();
 
-
 projects.display = function() {
 	if(projects.projects.length > 0) {
 		for(i in projects.projects) {
@@ -161,7 +159,6 @@ projects.display = function() {
 }
 
 projects.display();
-
 
 education.display = function() {
 	if(education.schools.length > 0 || education.onlineCourses.length > 0) {
@@ -212,7 +209,5 @@ education.display();
 //    var internationalName = firstName + " " + lastName;
 //    return internationalName;
 //};
-
-
 
 $("#mapDiv").append(googleMap);
