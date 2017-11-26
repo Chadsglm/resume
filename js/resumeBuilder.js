@@ -120,7 +120,7 @@ function displayWork() {
 			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
 			var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
 			var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
-			var formattedDatesWorked = HTMLworkDates.replace("%data%", work.jobs[i].datesWorked);
+			var formattedDatesWorked = HTMLworkDates.replace("%data%", work.jobs[i].dates);
 			var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
 
 			var formattedEmployerWorkTitle = formattedEmployer + formattedWorkTitle;
@@ -141,7 +141,7 @@ projects.display = function() {
 			$("#projects").append(HTMLprojectStart);
 
 			var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title).replace("#", projects.projects[i].url);
-			var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].datesWorked);
+			var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
 			var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
 
 			$(".project-entry:last").append(formattedProjectTitle);
@@ -167,7 +167,7 @@ education.display = function() {
 
 			var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name).replace("#", education.schools[i].url);
 			var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
-			var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].datesAttended);
+			var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].dates);
 			var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);			
 			var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].major);
 

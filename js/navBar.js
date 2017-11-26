@@ -5,7 +5,6 @@ $(function() {
 
   function navControl() {
     var currentScroll = $(document).scrollTop();
-    console.log('cemil', navPosition, currentScroll);
     if (currentScroll >= navPosition) {
       navBar.classList.add('fixed-nav');
       header.classList.add('expand-header');
